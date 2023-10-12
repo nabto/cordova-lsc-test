@@ -1,13 +1,13 @@
 # Simple app to invoke ping.json
 
-This app invokes ping.json on an LS and write the result to the console. No UI. Your Android device must be connected directly to the gateway in AP mode.
+This app invokes ping.json on an LSC device and writes the result to the console. No UI. Your Android device must be connected directly to the gateway in AP mode.
 
 ## Instructions
 
 ### Install cordova and gradle
 
 ```
-$ npm install cordova
+$ sudo npm install -g cordova
 $ brew install gradle
 ```
 
@@ -17,7 +17,7 @@ Or point to some existing gradle binary installed with Android Studio.
 
 ```
 $ cordova platform add android
-$ cordova run android --target <a device id from adb --devices>
+$ cordova run android --target <a device id from 'adb devices'>
 $
 ```
 
